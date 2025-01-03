@@ -1,0 +1,58 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "9defc5a570e3a894882c82d9e88ca54f0578efb68744b9e014beb91cbb671806"
+    }
+  ],
+  "containerPath" : "/Users/koladeamlabu/Dev/Data Structures and Algorithms/Data Structures and Algorithms.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx15.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/koladeamlabu/Dev/Data Structures and Algorithms/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/koladeamlabu/Dev/Data Structures and Algorithms/Build/Products",
+      "derivedDataPath" : "/Users/koladeamlabu/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/koladeamlabu/Library/Developer/Xcode/DerivedData/Data_Structures_and_Algorithms-enqxvqqbgzglcecjyzuvrbuxnfzv/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/koladeamlabu/Library/Developer/Xcode/DerivedData/Data_Structures_and_Algorithms-enqxvqqbgzglcecjyzuvrbuxnfzv/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/koladeamlabu/Dev/Data Structures and Algorithms/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
