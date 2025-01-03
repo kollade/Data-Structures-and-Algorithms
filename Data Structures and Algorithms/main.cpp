@@ -3,7 +3,8 @@
 //#include "queue.h"
 //#include "sLinkedList.h"
 //#include "dLinkedList.h"
-#include "cLinkedList.h"
+//#include "cLinkedList.h"
+#include "BinarySearch.h"
 
 
 
@@ -12,25 +13,16 @@
 
 
 int main(){
+    std::array<int, 7> arrays= {1, 2, 3, 4, 5, 6, 7};
+    int searchno;
+    std::cout << "Enter the number you want to search:\n";
+    std::cin >> searchno;
+    if ( binarySearch<7>(arrays, searchno) == -1)
+    {
+        std::cout << "no match found" << std::endl;
+    }
+    else
+        std::cout << "match found in: " <<  binarySearch<7>(arrays, searchno) << std::endl;
     
-    node2 n1(1, 100);
-    node2 n2(2, 200);
-    node2 n3(3, 300);
-    node2 n5(4, 500);
-    node2 n4(45, 333);
-    
-    circleLinkedList s_list(&n1);
-    s_list.prependNode(&n2);
-    s_list.appendNode(&n3);
-    s_list.appendNode(&n5);
-    s_list.appendNode(&n4);
-    
-    
-    std::cout << "the size of the list is " <<  s_list.getSize() << std::endl;
-    s_list.print();
-    
-    s_list.deleteNode(45);
-    
-    std::cout << "the size of the list is " <<  s_list.getSize() << std::endl;
-    s_list.print();
+    //std::cout << binarySearch<7>(arrays, 6) << std::endl;
 }
