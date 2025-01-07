@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "insertionSort.h"
+#include "bubbleSort.h"
 
 
 
@@ -10,9 +10,11 @@
 
 int main(){
     
-    std::array<int, 6> argss = {5, 4, 3, 2, 1, 7};
+    std::array<int, 50> argss;
+    for (int i = 49; i >= 0; i--)
+        argss[i] = 50 % i ;
      
-     for (int i = 0; i < 5; i++)
-         std::cout << insertionSort(argss)[i] << std::endl;
+     for (int i = 0; i < 50; i++)
+         std::cout << bubbleSort(argss) [i]<< std::endl;
  
 }
