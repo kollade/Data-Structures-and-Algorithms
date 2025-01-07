@@ -1,36 +1,24 @@
 #pragma once
 
 
-std::array<int, 5> insertionSort(std::array<int, 5> arr)
+std::array<int, 6> insertionSort(std::array<int,6> arr)
 {
-    int min;
-    int min_pos;
-    int temp;
+    int j = 0;
+    int key = 0;
+    
     for (int i = 1; i < arr.size(); i++)
     {
-        int fact = 0;
-        min = arr[i];
-        min_pos = i;
-        for (int j = i-1; j <= 0; j--)
+        key = arr[i];
+        j = i-1;
+        
+        while(j >= 0 && arr[j] > key)
         {
-            if (arr[i] < arr[j])
-            {
-                min = arr[j];
-                min_pos = j;
-                temp = arr[i];
-                fact = 1;
-            }
-            else
-                break;
+            arr[j+1] = arr[j];
+            j = j-1;
         }
-        if (fact == 1){
-            for (int k = min_pos; k < i + 1; k++)
-            {
-                arr[k + 1] = arr[k];
-                arr[min_pos] = temp;
-            }
-        }
-
+        arr[j+1] = key;
+        
     }
     return arr;
+    
 }
